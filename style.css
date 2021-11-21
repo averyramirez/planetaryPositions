@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1.4px 1.4px grey;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 5px;
+}
+
+h4 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.header {
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+}
+
+.tagline {
+    justify-content: center;
+    display: flex;
+}
+
+.symbols {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.symbol {
+    width: 55px;
+    height: 55px;
+}
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.modal {
+    margin-top: 330px;
+    color: rgb(51, 51, 51);
+    overflow-y: auto;
+    padding-right: 0px !important;
+}
+
+.modal-open {
+    overflow: auto;
+    padding-right: 0px !important;
+}
+
+.modal-body {
+    font-family: 'Cutive Mono', monospace;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.modal-title {
+    font-family: 'Cutive Mono', monospace;
+    color: black !important;
+}
+
+.button {
+    background-color: transparent;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+@media (min-width: 600px) {
+    h1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 1.4px 1.4px grey;
+        font-size: 100px;
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 13px;
+    }
+    
+    h4 {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        letter-spacing: 4px;
+    }
+
+    .row {
+        margin-left: 260px;
+        margin-right: 260px;
+        margin-top: 20px;
+    }
+
+    .modal {
+        margin-top: 420px;
+        overflow-y: auto;
+        padding-right: 0px !important;
+    }
+
+    .modal-open {
+        overflow: auto;
+        padding-right: 0px !important;
+    }
+
+    .modal-body {
+        font-size: 18px;
+    }
+}
