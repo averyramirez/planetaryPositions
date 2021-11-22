@@ -70,6 +70,11 @@ h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 12px;
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: transparent;
 }
 
 .modal-title {
@@ -124,7 +129,7 @@ h4 {
     }
 
     .modal-dialog {
-        max-width: 780px;
+        max-width: 740px;
     }
 
     .modal-open {
