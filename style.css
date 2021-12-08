@@ -110,6 +110,11 @@ h4 {
     box-shadow: none !important;
 }
 
+.moonPhase .img {
+    height: 100px;
+    width: 100px;
+}
+
 
 @media (min-width: 600px) {
     h1 {
