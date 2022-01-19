@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: #131313;
 }
 
 html {
@@ -7,13 +7,13 @@ html {
     height: 100%;
 }
 
-h1 {
+/* h1 {
     color: rgb(255, 255, 255);
     text-shadow: 1.4px 1.4px grey;
     font-size: 50px;
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 8px;
-}
+} */
 
 h4 {
     color: white;
@@ -24,16 +24,7 @@ h4 {
     letter-spacing: 4px;
 }
 
-.header {
-    justify-content: center;
-    display: flex;
-    margin-top: 20px;
-}
 
-.tagline {
-    justify-content: center;
-    display: flex;
-}
 
 .symbols {
     justify-content: center;
@@ -115,6 +106,79 @@ h4 {
     width: 100px;
 }
 
+.brand {
+    animation: glitch 1s linear infinite;
+    justify-content: center;
+    background: #131313;
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px rgb(252, 243, 193);
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    background-color: #131313;
+}
+
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.brand:before,
+.brand:after{
+  content: attr(title);
+  position: absolute;
+}
+
+.brand:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.brand:after{
+  animation: glitchBottom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+.tagline {
+    justify-content: center;
+    display: flex;
+}
+
 
 @media (min-width: 600px) {
     h1 {
@@ -122,7 +186,7 @@ h4 {
         text-shadow: 1.4px 1.4px grey;
         font-size: 100px;
         font-family: 'Cormorant Garamond', serif;
-        letter-spacing: 13px;
+        letter-spacing: 15px;
     }
     
     h4 {
@@ -144,6 +208,12 @@ h4 {
         margin-left: 570px;
         margin-right: 570px;
         margin-top: 20px;
+    }
+
+    .brand {
+      font-size: 140px;
+      letter-spacing: 10px;
+      text-shadow: 1px 1px rgb(252, 243, 193);
     }
 
     .modal {
