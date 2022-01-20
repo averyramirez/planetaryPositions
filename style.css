@@ -44,7 +44,7 @@ h4 {
 }
 
 .modal {
-    /* margin-top: 380px; */
+    margin-top: 400px;
     color: rgb(51, 51, 51);
     overflow-y: auto;
     padding-right: 0px !important;
@@ -239,7 +239,7 @@ h4 {
     }
 
     .modal-dialog {
-        max-width: 740px;
+        max-width: 600px;
     }
 
     .modal-open {
