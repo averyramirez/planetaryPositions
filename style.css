@@ -44,18 +44,20 @@ h4 {
 }
 
 .modal {
-    margin-top: 380px;
+    /* margin-top: 380px; */
     color: rgb(51, 51, 51);
     overflow-y: auto;
     padding-right: 0px !important;
     box-shadow: none !important;
     outline: none !important;
+    border: none !important;
 }
 
 
 .modal-open {
     overflow: auto;
     padding-right: 0px !important;
+    border: none !important;
 }
 
 .modal-body {
@@ -67,21 +69,29 @@ h4 {
     color: white;
     box-shadow: none !important;
     outline: none !important;
+    border: none !important;
 }
 
 .modal-content {
     background-color: transparent;
     box-shadow: none !important;
     outline: none !important;
+    border: none !important;
 }
 
 .modal-title {
     font-family: 'Cutive Mono', monospace !important;
     color: white !important;
+    border: none !important;
 }
 
 .modal-header {
     font-family: 'Cutive Mono', monospace !important;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+  border: none !important;
 }
 
 .button {
@@ -101,6 +111,10 @@ h4 {
     box-shadow: none !important;
 }
 
+.btn-hover {
+  color: orange !important;
+}
+
 .moonPhase .img {
     height: 100px;
     width: 100px;
@@ -118,6 +132,7 @@ h4 {
     display: flex;
     background-color: #131313;
 }
+
 
 
 @keyframes glitch{
@@ -205,9 +220,9 @@ h4 {
     }
 
     .row {
-        margin-left: 570px;
-        margin-right: 570px;
-        margin-top: 20px;
+        margin-left: 300px;
+        margin-right: 1100px;
+        margin-top: 100px;
     }
 
     .brand {
@@ -217,7 +232,8 @@ h4 {
     }
 
     .modal {
-        margin-top: 480px;
+        margin-top: 260px;
+        margin-left: 400px;
         overflow-y: auto;
         padding-right: 0px !important;
     }
